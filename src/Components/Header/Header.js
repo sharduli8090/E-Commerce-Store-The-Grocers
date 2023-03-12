@@ -6,7 +6,7 @@ const Header = () => {
   let links = [
     { name: "HOME", link: "/" },
     { name: "FOOD", link: "/food" },
-    { name: "SANITARY", link: "sanitary" },
+    { name: "SANITARY", link: "/sanitary" },
     { name: "ORDERS", link: "/orders" },
     { name: "ABOUT US", link: "/aboutus" },
   ];
@@ -19,16 +19,16 @@ const Header = () => {
         style={{ zIndex: 1 }}
       >
         <div className="md:flex bg-white py-0.5 md:px-10 px-7 items-center justify-between">
-          <div className="font-bold  text-2xl cursor-pointer flex items-center text-gray-800 ">
-            <span className="text-4xl md:mr-5 text-indigo-800 mr-1 ">
+          <div className="font-bold text-base sm:text-2xl cursor-pointer flex items-center text-gray-800 ">
+            <span className="  md:mr-5 text-indigo-800 mr-1 ">
               {/* <ion-icon name="logo-ionic"></ion-icon> */}
-              <img src={logo} className="h-16"/>
+              <img src={logo} className="h-10 sm:h-16"/>
             </span>
             The Grocers
           </div>
           <div
             onClick={() => setOpen(!open)}
-            className="text-3xl absolute right-8 top-2 cursor-pointer md:hidden"
+            className="text-3xl absolute right-8 top-2 sm:top-5  cursor-pointer md:hidden"
           >
             <ion-icon name={open ? "close" : "menu-outline"}></ion-icon>
           </div>

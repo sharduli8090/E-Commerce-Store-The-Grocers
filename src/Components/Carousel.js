@@ -31,25 +31,25 @@ const Carousel = () => {
   // };
   return (
     <>
-      <div className="h-96 mt-12  py-12 px-4 relative group">
+      <div className="   sm:mt-12  py-12 px-4 relative group transition-all duration-1000 ease-in-out animation-pulse  ">
         <img
           src={images[ind].url}
-          className="w-full h-full rounded bg-center bg-cover duration-500"
+          className="w-full h-full bg-center bg-cover duration-1000"
         />
 
         {/* </div> */}
 
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full bg-black/20 p-2 text-white cursor-pointer">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5  text-2xl rounded-full bg-black/20 p-2 text-white cursor-pointer">
           <ion-icon
             name="chevron-back-outline"
-            size="large"
+            size="small"
             onClick={prevSlide}
           ></ion-icon>
         </div>
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full bg-black/20 p-2 text-white cursor-pointer">
           <ion-icon
             name="chevron-forward-outline"
-            size="large"
+            size="small"
             onClick={nextSlide}
           ></ion-icon>
         </div>

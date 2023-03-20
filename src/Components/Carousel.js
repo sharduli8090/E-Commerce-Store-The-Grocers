@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "../Assets/Images/1.png";
 import img2 from "../Assets/Images/2.png";
-import img3 from '../Assets/Images/3.png';
+import img3 from "../Assets/Images/3.png";
 
 const Carousel = () => {
   const images = [
@@ -9,11 +9,11 @@ const Carousel = () => {
       url: img1,
     },
     {
-      url:img2,
+      url: img2,
     },
     {
       url: img3,
-    }
+    },
   ];
   const [ind, setInd] = useState(0);
   const prevSlide = () => {
@@ -34,7 +34,7 @@ const Carousel = () => {
       <div className="   sm:mt-12  py-12 px-4 relative group transition-all duration-1000 ease-in-out animation-pulse  ">
         <img
           src={images[ind].url}
-          className="w-full h-full bg-center bg-cover duration-1000"
+          className="w-full h-full bg-center bg-cover duration-1000 "
         />
 
         {/* </div> */}
